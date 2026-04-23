@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Favour Tech Service | Virtual Services 24/7</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Emergency/Urgent Service Banner -->
+<div class="emergency-banner" id="emergencyBanner">
+  <div class="emergency-content">
+    <i class="fas fa-bell"></i>
+    <span>🚨 URGENT: Need it NOW? Same-day service available! Call 0786633967</span>
+    <button class="close-emergency" id="closeEmergency">&times;</button>
+  </div>
+</div>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <span><i class="fas fa-phone-alt"></i> 24/7 Support: 0786633967</span>
+  <span><i class="fas fa-envelope"></i> help@favourtech.co.ke</span>
+  <span class="live-status"><i class="fas fa-circle" style="color: #2ecc71; font-size: 0.7rem;"></i> <span id="onlineAgentsTop">8</span> Agents Online</span>
+</div>
+
+<!-- Main Navigation -->
+<div class="main-nav">
+  <div class="logo-area">
+    <div class="logo-placeholder"><i class="fas fa-bolt"></i></div>
+    <div class="logo-text">
+      <h1>FAVOUR TECH SERVICE</h1>
+      <p>Virtual Services • Beyond Imagination</p>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#kra">KRA</a>
+    <a href="#ecitizen">E-Citizen</a>
+    <a href="#ntsa">NTSA</a>
+    <a href="#sha">SHA</a>
+    <a href="#design">Design</a>
+    <a href="#contact" class="contact-btn"><i class="fab fa-whatsapp"></i> 0786633967</a>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero" id="home">
+  <h2>⚡ Service Beyond Imagination</h2>
+  <p>Your trusted partner for KRA, E-Citizen, NTSA, HELB, TSC, SHA, and creative design services. Fast, reliable, 24/7 virtual assistance.</p>
+  <div class="hero-buttons">
+    <a href="#" class="btn-primary" id="getStartedBtn"><i class="fas fa-headset"></i> Get Started</a>
+    <a href="#" class="btn-outline" id="whatsappHeroBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- Live Support Queue -->
+<div class="live-queue" id="liveQueue">
+  <div class="queue-container">
+    <i class="fas fa-users"></i>
+    <div class="queue-info">
+      <span class="queue-label">Live Support Queue</span>
+      <span class="queue-position">Your position: <span id="queuePosition">3</span></span>
+      <span class="queue-wait">Est. wait: <span id="queueWaitTime">5-8</span> minutes</span>
+    </div>
+    <div class="queue-progress">
+      <div class="queue-bar" id="queueBar" style="width: 60%"></div>
+    </div>
+    <button class="join-queue" id="joinQueueBtn">Join Queue</button>
+  </div>
+</div>
+
+<!-- AI-Powered Service Finder -->
+<div class="ai-finder" data-aos="fade-up">
+  <div class="ai-finder-container">
+    <i class="fas fa-robot"></i>
+    <h3>🤖 AI Service Finder</h3>
+    <p>Tell us what you need, and we'll find the perfect service for you</p>
+    <div class="ai-search-box">
+      <input type="text" id="aiSearchInput" placeholder="e.g., I need a KRA PIN, passport, NTSA license...">
+      <button id="aiSearchBtn"><i class="fas fa-search"></i> Find Service</button>
+    </div>
+    <div id="aiResults" class="ai-results"></div>
+  </div>
+</div>
+
+<!-- Trust Indicators -->
+<div class="trust-indicators" data-aos="fade-up">
+  <div class="trust-item">
+    <i class="fas fa-lock"></i>
+    <span>SSL Secure</span>
+    <small>256-bit encryption</small>
+  </div>
+  <div class="trust-item">
+    <i class="fas fa-money-bill-wave"></i>
+    <span>Money-back Guarantee</span>
+    <small>100% satisfaction</small>
+  </div>
+  <div class="trust-item">
+    <i class="fab fa-google"></i>
+    <span>Verified by Google</span>
+    <small>Trusted business</small>
+  </div>
+  <div class="trust-item">
+    <i class="fas fa-certificate"></i>
+    <span>KRA Certified</span>
+    <small>Official partner</small>
+  </div>
+</div>
+
+<!-- Achievement Badges Section -->
+<div class="achievements-section" data-aos="fade-up">
+  <h2 class="section-title">🏆 Our Achievements</h2>
+  <div class="achievements-grid">
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" alt="Happy Clients">
+      <div class="achievement-number">5,000+</div>
+      <div class="achievement-label">Happy Clients</div>
+    </div>
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Success Rate">
+      <div class="achievement-number">98%</div>
+      <div class="achievement-label">Success Rate</div>
+    </div>
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1907/1907560.png" alt="24hr Delivery">
+      <div class="achievement-number">24hr</div>
+      <div class="achievement-label">Average Delivery</div>
+    </div>
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2972/2972006.png" alt="Counties">
+      <div class="achievement-number">47</div>
+      <div class="achievement-label">Counties Served</div>
+    </div>
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Years">
+      <div class="achievement-number">5+</div>
+      <div class="achievement-label">Years Experience</div>
+    </div>
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Rating">
+      <div class="achievement-number">4.9</div>
+      <div class="achievement-label">Client Rating</div>
+    </div>
+  </div>
+</div>
+
+<!-- Seasonal Promotions -->
+<div class="promotions-section" data-aos="fade-up">
+  <h2 class="section-title">🎉 Seasonal Offers</h2>
+  <div class="promotions-grid">
+    <div class="promo-card">
+      <i class="fas fa-gift"></i>
+      <h3>Holiday Discount</h3>
+      <p class="discount">20% OFF</p>
+      <p>All services during holidays</p>
+      <span class="promo-code">Code: HOLIDAY20</span>
+    </div>
+    <div class="promo-card">
+      <i class="fas fa-graduation-cap"></i>
+      <h3>Back to School</h3>
+      <p class="discount">15% OFF</p>
+      <p>HELB & KUCCPS applications</p>
+      <span class="promo-code">Code: SCHOOL15</span>
+    </div>
+    <div class="promo-card">
+      <i class="fas fa-file-invoice"></i>
+      <h3>Tax Season</h3>
+      <p class="discount">25% OFF</p>
+      <p>KRA filing & returns</p>
+      <span class="promo-code">Code: TAX25</span>
+    </div>
+    <div class="promo-card">
+      <i class="fas fa-user-plus"></i>
+      <h3>Referral Bonus</h3>
+      <p class="discount">KES 200</p>
+      <p>For each successful referral</p>
+      <span class="promo-code">Share your code</span>
+    </div>
+  </div>
+</div>
+
+<!-- Trusted Partner Logos Section -->
+<div class="trusted-section">
+  <h3>Trusted & Authorized Partners</h3>
+  <div class="logo-grid">
+    <div class="logo-card">
+      <img src="images/KRA.png" alt="KRA Logo" class="real-logo" onerror="this.src='https://placehold.co/160x80/0b2b3b/ffd966?text=KRA'">
+      <span>Kenya Revenue Authority</span>
+      <small>KRA Certified</small>
+    </div>
+    <div class="logo-card">
+      <img src="images/E-CITIZEN.png " alt="E-Citizen Logo" class="real-logo" onerror="this.src='https://placehold.co/160x80/0b2b3b/ffd966?text=E-Citizen'">
+      <span>eCitizen</span>
+      <small>Govt Portal Partner</small>
+    </div>
+    <div class="logo-card">
+      <img src="images/NTSA.png" alt="NTSA Logo" class="real-logo" onerror="this.src='https://placehold.co/160x80/0b2b3b/ffd966?text=NTSA'">
+      <span>NTSA</span>
+      <small>Keep roads safe</small>
+    </div>
+    <div class="logo-card">
+      <img src="https://www.health.go.ke/wp-content/uploads/2020/08/MOH-Logo.png" alt="Ministry of Health" class="real-logo" onerror="this.src='https://placehold.co/160x80/0b2b3b/ffd966?text=SHA'">
+      <span>SHA</span>
+      <small>Social Health Authority</small>
+    </div>
+  </div>
+</div>
+
+<!-- Service Cards -->
+<div class="services-section">
+  <h2 class="section-title">What We Do For You</h2>
+  <div class="services-grid">
+    <!-- KRA Card -->
+    <div class="service-card" id="kra">
+      <div class="card-logo-header">
+        <img src="https://www.kra.go.ke/assets/images/kra-logo.png" alt="KRA Logo" class="service-real-logo" onerror="this.src='https://placehold.co/100x50/0b2b3b/ffd966?text=KRA'">
+        <i class="fas fa-file-invoice-dollar card-icon-header"></i>
+      </div>
+      <img class="card-image" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop" alt="KRA Tax Services" onerror="this.src='https://placehold.co/600x400/0b2b3b/ffd966?text=KRA+Services'">
+      <div class="card-header">
+        <h3>KRA SERVICES</h3>
+      </div>
+      <div class="card-body">
+        <p>We handle all Kenya Revenue Authority matters so you stay compliant without the hassle.</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> New PIN Application</li>
+          <li><i class="fas fa-check-circle"></i> Individual Nil Returns</li>
+          <li><i class="fas fa-check-circle"></i> Employment & Withholding Returns</li>
+          <li><i class="fas fa-check-circle"></i> Amnesty Application (Waiver)</li>
+          <li><i class="fas fa-check-circle"></i> KRA PIN Retrieval</li>
+          <li><i class="fas fa-check-circle"></i> KRA Email Change</li>
+        </ul>
+        <div class="service-cta">📞 Call us for KRA assistance → 0786633967</div>
+      </div>
+    </div>
+
+    <!-- E-Citizen Card -->
+    <div class="service-card" id="ecitizen">
+      <div class="card-logo-header">
+        <img src="https://www.ecitizen.go.ke/images/ecitizen-logo.png" alt="E-Citizen Logo" class="service-real-logo" onerror="this.src='https://placehold.co/100x50/0b2b3b/ffd966?text=E-Citizen'">
+        <i class="fas fa-users card-icon-header"></i>
+      </div>
+      <img class="card-image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="E-Citizen Services" onerror="this.src='https://placehold.co/600x400/0b2b3b/ffd966?text=E-Citizen+Services'">
+      <div class="card-header">
+        <h3>E-CITIZEN SERVICES</h3>
+      </div>
+      <div class="card-body">
+        <p>Access all government services through E-Citizen. We handle the entire process for you.</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Opening E-Citizen Account</li>
+          <li><i class="fas fa-check-circle"></i> E-Citizen Email Change</li>
+          <li><i class="fas fa-check-circle"></i> Good Conduct Certificate</li>
+          <li><i class="fas fa-check-circle"></i> Passport Application</li>
+          <li><i class="fas fa-check-circle"></i> NTSA Services (TIMS)</li>
+        </ul>
+        <div class="service-cta">🛂 Get your documents fast → 0786633967</div>
+      </div>
+    </div>
+
+    <!-- Other Services Card -->
+    <div class="service-card" id="design">
+      <div class="card-logo-header">
+        <i class="fas fa-palette card-icon-header"></i>
+      </div>
+      <img class="card-image" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop" alt="Design & Applications" onerror="this.src='https://placehold.co/600x400/0b2b3b/ffd966?text=Design+Services'">
+      <div class="card-header">
+        <h3>OTHER SERVICES</h3>
+      </div>
+      <div class="card-body">
+        <p>From creative design to education and career applications, we've got you covered.</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Business Cards Design</li>
+          <li><i class="fas fa-check-circle"></i> Posters & Flyers Design</li>
+          <li><i class="fas fa-check-circle"></i> TSC Application</li>
+          <li><i class="fas fa-check-circle"></i> HELB Applications</li>
+          <li><i class="fas fa-check-circle"></i> KUCCPS Application</li>
+        </ul>
+        <div class="service-cta">🎨 Get creative & apply today → 0786633967</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- How We Help Section -->
+<div class="help-section">
+  <h2 class="section-title">💫 How We Help You</h2>
+  <div class="help-grid">
+    <div class="help-card">
+      <i class="fas fa-bolt"></i>
+      <h3>Fast Processing</h3>
+      <p>We handle all government applications within 24-48 hours. No more waiting in long queues!</p>
+    </div>
+    <div class="help-card">
+      <i class="fas fa-headset"></i>
+      <h3>24/7 Support</h3>
+      <p>Our team is available round the clock to answer your questions and guide you through every step.</p>
+    </div>
+    <div class="help-card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Secure & Confidential</h3>
+      <p>Your personal information is protected with enterprise-grade security and privacy protocols.</p>
+    </div>
+    <div class="help-card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Remote Assistance</h3>
+      <p>Get help from anywhere in Kenya. We work online, so you don't need to visit any office.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Before/After Sliders Section -->
+<div class="before-after-section" data-aos="fade-up">
+  <h2 class="section-title">🔄 Design Transformations</h2>
+  <div class="sliders-grid">
+    <div class="slider-container">
+      <h3>Business Card Redesign</h3>
+      <div class="compare-slider">
+        <img src="https://images.unsplash.com/photo-1586333076847-7a8fc9f3a6f4?w=500&h=300&fit=crop" alt="Before" class="slider-before">
+        <img src="https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=500&h=300&fit=crop" alt="After" class="slider-after">
+        <div class="slider-handle"></div>
+      </div>
+      <p class="case-study-link"><a href="#" class="view-case">View Case Study →</a></p>
+    </div>
+    <div class="slider-container">
+      <h3>Logo Redesign</h3>
+      <div class="compare-slider">
+        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=500&h=300&fit=crop" alt="Before" class="slider-before">
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&h=300&fit=crop" alt="After" class="slider-after">
+        <div class="slider-handle"></div>
+      </div>
+      <p class="case-study-link"><a href="#" class="view-case">View Case Study →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- NTSA Special Section -->
+<div class="ntsa-section" id="ntsa">
+  <div class="ntsa-header-with-logo">
+    <img src="https://www.ntsa.go.ke/wp-content/uploads/2020/05/NTSA-Logo-1.png" alt="NTSA Logo" class="ntsa-real-logo" onerror="this.src='https://placehold.co/100x60/0b2b3b/ffd966?text=NTSA'">
+    <h2 class="section-title">NTSA SERVICES</h2>
+  </div>
+  <div class="ntsa-gallery">
+    <div class="ntsa-image-container">
+      <img class="ntsa-urban-img" src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=400&fit=crop" alt="Nairobi Urban Roads" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=Urban+Roads'">
+      <div class="image-caption">Nairobi Urban Roads Network</div>
+    </div>
+    <div class="ntsa-image-container">
+      <img class="ntsa-urban-img" src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&h=400&fit=crop" alt="City Traffic" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=City+Traffic'">
+      <div class="image-caption">Modern City Infrastructure</div>
+    </div>
+    <div class="ntsa-image-container">
+      <img class="ntsa-urban-img" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=400&fit=crop" alt="Highway Safety" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=Highway+Safety'">
+      <div class="image-caption">Safe Highways Across Kenya</div>
+    </div>
+  </div>
+  <div class="ntsa-content">
+    <i class="fas fa-road"></i>
+    <p><strong>Keep our roads safe</strong> — Driving License, Logbook, TIMS Support</p>
+    <p class="ntsa-description">We help you process all NTSA services online. No need to visit crowded offices. Get your driving license, logbook transfers, and vehicle inspections done remotely.</p>
+    <div class="service-cta">🚗 Drive legally with our help → 0786633967</div>
+  </div>
+</div>
+
+<!-- Video Showreel & Testimonials -->
+<div class="video-section" data-aos="fade-up">
+  <h2 class="section-title">🎥 Client Testimonials & Showreel</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <h3>Design Portfolio Showreel</h3>
+      <p>30-second creative showcase</p>
+    </div>
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ?autoplay=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <h3>Client Success Story</h3>
+      <p>How we helped a startup grow</p>
+    </div>
+    <div class="testimonial-video">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/gjNfiHlPmJo?autoplay=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="testimonial-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>"Fast, reliable, and professional! Got my KRA PIN in 2 days!"</p>
+        <cite>- Sarah M., Business Owner</cite>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHA Section -->
+<div class="sha-section" id="sha">
+  <div class="sha-header-with-logo">
+    <img src="https://www.health.go.ke/wp-content/uploads/2020/08/MOH-Logo.png" alt="Ministry of Health" class="sha-real-logo" onerror="this.src='https://placehold.co/100x60/0b2b3b/ffd966?text=SHA'">
+    <h2 class="section-title">SHA REGISTRATION</h2>
+  </div>
+  <div class="sha-gallery">
+    <div class="sha-image-container">
+      <img class="sha-health-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop" alt="Modern Hospital" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=Modern+Hospital'">
+      <div class="image-caption">Quality Healthcare Access</div>
+    </div>
+    <div class="sha-image-container">
+      <img class="sha-health-img" src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=400&fit=crop" alt="Medical Care" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=Medical+Care'">
+      <div class="image-caption">Affordable Medical Coverage</div>
+    </div>
+    <div class="sha-image-container">
+      <img class="sha-health-img" src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=800&h=400&fit=crop" alt="Patient Care" onerror="this.src='https://placehold.co/800x400/0b2b3b/ffd966?text=Patient+Care'">
+      <div class="image-caption">Patient-First Approach</div>
+    </div>
+  </div>
+  <div class="sha-content">
+    <i class="fas fa-notes-medical"></i>
+    <p><strong>Social Health Authority Registration</strong> — Get enrolled in Kenya's new health coverage system</p>
+    <p class="sha-description">We assist with SHA registration, ensuring you and your family have access to quality healthcare. Quick, easy, and hassle-free enrollment process.</p>
+    <ul class="service-list">
+      <li><i class="fas fa-check-circle"></i> New SHA Registration</li>
+      <li><i class="fas fa-check-circle"></i> Family Member Enrollment</li>
+      <li><i class="fas fa-check-circle"></i> Contribution Management</li>
+      <li><i class="fas fa-check-circle"></i> Health Facility Selection</li>
+    </ul>
+    <div class="service-cta">🏥 Secure your health coverage today → 0786633967</div>
+  </div>
+</div>
+
+<!-- Portfolio Lightbox Gallery -->
+<div class="portfolio-section">
+  <h2 class="section-title">🎨 Our Creative Portfolio</h2>
+  <div class="portfolio-grid" id="portfolioGrid">
+    <div class="portfolio-item" data-client="Tech Startup" data-description="Modern business cards for a Nairobi tech company">
+      <img src="https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=400&h=300&fit=crop" alt="Business Card Design">
+      <div class="portfolio-overlay">
+        <h4>Tech Startup Cards</h4>
+        <p>Modern minimalist design</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=800&h=600&fit=crop" data-client="Tech Startup" data-desc="Complete business card set for a tech company">View →</button>
+      </div>
+    </div>
+    <div class="portfolio-item" data-client="Restaurant Chain" data-description="Complete branding package including logo, menus, and signage">
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop" alt="Branding Package">
+      <div class="portfolio-overlay">
+        <h4>Restaurant Branding</h4>
+        <p>Complete identity package</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop" data-client="Restaurant Chain" data-desc="Full brand identity including logo, menus, and signage">View →</button>
+      </div>
+    </div>
+    <div class="portfolio-item" data-client="Music Festival" data-description="Vibrant poster design for annual music festival">
+      <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=400&h=300&fit=crop" alt="Event Poster">
+      <div class="portfolio-overlay">
+        <h4>Concert Poster</h4>
+        <p>Event marketing design</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1544441893-675973e31985?w=800&h=600&fit=crop" data-client="Music Festival" data-desc="Eye-catching poster design for annual music festival">View →</button>
+      </div>
+    </div>
+    <div class="portfolio-item" data-client="Fashion Brand" data-description="Promotional flyers for fashion week event">
+      <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&h=300&fit=crop" alt="Promo Flyer">
+      <div class="portfolio-overlay">
+        <h4>Promo Flyer</h4>
+        <p>Digital & print ready</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop" data-client="Fashion Brand" data-desc="Promotional flyers for fashion week">View →</button>
+      </div>
+    </div>
+    <div class="portfolio-item" data-client="Beauty Influencer" data-description="Social media templates for Instagram">
+      <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=300&fit=crop" alt="Social Media">
+      <div class="portfolio-overlay">
+        <h4>Instagram Templates</h4>
+        <p>Social media kit</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop" data-client="Beauty Influencer" data-desc="Complete social media template kit">View →</button>
+      </div>
+    </div>
+    <div class="portfolio-item" data-client="Law Firm" data-description="Premium luxury business cards for law firm">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop" alt="Luxury Cards">
+      <div class="portfolio-overlay">
+        <h4>Luxury Business Cards</h4>
+        <p>Premium finish</p>
+        <button class="view-project" data-img="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" data-client="Law Firm" data-desc="Premium luxury business cards with gold foil">View →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <button class="lightbox-prev">❮</button>
+  <img class="lightbox-img" id="lightboxImg">
+  <button class="lightbox-next">❯</button>
+  <div class="lightbox-info">
+    <h3 id="lightboxClient"></h3>
+    <p id="lightboxDesc"></p>
+    <button class="download-sample" id="downloadSampleBtn"><i class="fas fa-download"></i> Download Sample</button>
+  </div>
+</div>
+
+<!-- Document Template Previews -->
+<div class="templates-section" data-aos="fade-up">
+  <h2 class="section-title">📄 Document Templates & Guides</h2>
+  <div class="templates-grid">
+    <div class="template-card">
+      <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=200&fit=crop" alt="KRA PIN Sample">
+      <h3>KRA PIN Certificate Sample</h3>
+      <p>See what your certificate will look like</p>
+      <button class="view-template" data-template="kra">Preview Template →</button>
+    </div>
+    <div class="template-card">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=200&fit=crop" alt="Passport Photo">
+      <h3>Passport Photo Requirements</h3>
+      <p>Official guidelines & sample</p>
+      <button class="view-template" data-template="passport">View Requirements →</button>
+    </div>
+    <div class="template-card">
+      <img src="https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=300&h=200&fit=crop" alt="Business Card">
+      <h3>Business Card Templates</h3>
+      <p>10+ professional designs available</p>
+      <button class="view-template" data-template="business">Browse Templates →</button>
+    </div>
+  </div>
+</div>
+
+<!-- Template Preview Modal -->
+<div id="templateModal" class="template-modal">
+  <div class="template-modal-content">
+    <span class="close-template">&times;</span>
+    <div id="templateContent"></div>
+  </div>
+</div>
+
+<!-- Happy Clients Gallery -->
+<h2 class="section-title">✨ Our Happy Clients</h2>
+<div class="people-gallery">
+  <div class="person-card">
+    <img class="person-img" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=300&fit=crop" alt="Happy Student" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Student'">
+    <div class="person-info">
+      <div class="stars">★★★★★</div>
+      <p>"Got my KRA PIN and HELB loan approved in 2 days! The team was very helpful throughout."</p>
+      <strong>- Amara, University Student</strong>
+    </div>
+  </div>
+  <div class="person-card">
+    <img class="person-img" src="images/dad.png" alt="Professional Client" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Locan'">
+    <div class="person-info">
+      <div class="stars">★★★★★</div>
+      <p>"Fast passport renewal and NTSA logbook transfer. Excellent customer service! Highly recommended."</p>
+      <strong>- Locan, Entrepreneur</strong>
+    </div>
+  </div>
+  <div class="person-card">
+    <img class="person-img" src="images/dan.png" alt="Creative Professional" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Danstone'">
+    <div class="person-info">
+      <div class="stars">★★★★★</div>
+      <p>"Their design team made amazing business cards for my startup! Professional and creative work."</p>
+      <strong>- Danstone, Creative Director</strong>
+    </div>
+  </div>
+</div>
+
+<!-- Our Team Section -->
+<div class="team-section">
+  <h2><i class="fas fa-users"></i> Meet Our Expert Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <img class="team-img" src="images/Tondo.png" alt="Tondo B." onerror="this.src='https://placehold.co/200x200/0b2b3b/ffd966?text=Tondo'">
+      <h4>Tondo B.</h4>
+      <p>KRA & Tax Expert</p>
+      <small>10+ years experience</small>
+    </div>
+    <div class="team-member">
+      <img class="team-img" src="images/allan.png" alt="Allan K." onerror="this.src='https://placehold.co/200x200/0b2b3b/ffd966?text=Allan'">
+      <h4>Allan K.</h4>
+      <p>E-Citizen Specialist</p>
+      <small>Former Huduma Centre agent</small>
+    </div>
+    <div class="team-member">
+      <img class="team-img" src="images/kalvin.jpeg" alt="Kalvin M." onerror="this.src='https://placehold.co/200x200/0b2b3b/ffd966?text=Kalvin'">
+      <h4>Kalvin M.</h4>
+      <p>Design & Creative Lead</p>
+      <small>Award-winning designer</small>
+    </div>
+    <div class="team-member">
+      <img class="team-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Grace W." onerror="this.src='https://placehold.co/200x200/0b2b3b/ffd966?text=Grace'">
+      <h4>Grace W.</h4>
+      <p>Customer Support 24/7</p>
+      <small>Always here to help</small>
+    </div>
+  </div>
+</div>
+
+<!-- Design Portfolio Showcase (Original) -->
+<h2 class="section-title">🎨 Our Creative Portfolio</h2>
+<div class="design-showcase">
+  <div class="design-item">
+    <img class="design-img" src="https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=400&h=300&fit=crop" alt="Business Card Design" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Business+Card'">
+    <div class="design-info"><strong>Modern Business Cards</strong></div>
+  </div>
+  <div class="design-item">
+    <img class="design-img" src="https://images.unsplash.com/photo-1544441893-675973e31985?w=400&h=300&fit=crop" alt="Poster Design" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Poster'">
+    <div class="design-info"><strong>Event Posters</strong></div>
+  </div>
+  <div class="design-item">
+    <img class="design-img" src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&h=300&fit=crop" alt="Flyer Design" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Flyer'">
+    <div class="design-info"><strong>Marketing Flyers</strong></div>
+  </div>
+  <div class="design-item">
+    <img class="design-img" src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop" alt="Branding" onerror="this.src='https://placehold.co/400x300/0b2b3b/ffd966?text=Branding'">
+    <div class="design-info"><strong>Brand Identity</strong></div>
+  </div>
+</div>
+
+<!-- Why Choose Us Section -->
+<div class="why-choose">
+  <h2 class="section-title">🌟 Why Choose Favour Tech Service?</h2>
+  <div class="features-grid">
+    <div class="feature">
+      <i class="fas fa-clock"></i>
+      <div>
+        <h4>Same-Day Processing</h4>
+        <p>Most applications completed within 24 hours</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="fas fa-check-circle"></i>
+      <div>
+        <h4>100% Success Rate</h4>
+        <p>Thousands of satisfied clients across Kenya</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="fas fa-money-bill-wave"></i>
+      <div>
+        <h4>Affordable Rates</h4>
+        <p>Best prices for quality virtual assistance</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="fas fa-map-marker-alt"></i>
+      <div>
+        <h4>Nationwide Coverage</h4>
+        <p>Serving all 47 counties in Kenya</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- M-Pesa Payment Section -->
+<div class="mpesa-box" id="contact">
+  <div>
+    <i class="fas fa-money-bill-wave"></i>
+    <h3>M-Pesa Express Payment</h3>
+    <p>Pay Bill: 789654 | Account: Your Phone Number</p>
+    <small>Secure payment via M-Pesa</small>
+  </div>
+  <button class="btn-primary" id="mpesaBtn"><i class="fas fa-bolt"></i> Pay Now</button>
+  <button class="btn-outline" id="callBtn"><i class="fas fa-headset"></i> Call 0786633967</button>
+</div>
+
+<!-- Trust Badges -->
+<div class="trust-badge">
+  <p><i class="fas fa-shield-alt"></i> Trusted by 5,000+ Kenyans Nationwide</p>
+  <p><i class="fas fa-clock"></i> 24/7 Support • Fast Turnaround • 100% Confidential</p>
+</div>
+
+<footer>
+  <p>🚀 FAVOUR TECH SERVICE — Virtual Services 24/7</p>
+  <p>KRA | E-Citizen | NTSA | SHA | Design | HELB | KUCCPS | TSC</p>
+  <p><i class="fas fa-phone"></i> 0786633967 | <i class="fab fa-whatsapp"></i> 0786633967</p>
+  <p class="tagline">Service Beyond Imagination ✨ | Proudly Serving Kenya</p>
+</footer>
+
+<!-- Floating Chat Button -->
+<div class="chat-float" id="chatBtn">
+  <i class="fas fa-comment-dots"></i>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
